@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Columna izquierda -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm p-3">
+                    <h1 class="text-center mb-3">Laura Martinez-Galindo</h1>
+                    <img class="img-fluid rounded mx-auto d-block mb-3" 
+                         src="https://media.licdn.com/dms/image/v2/D4E03AQHJUxnzPdoL_g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1726528144367?e=1762992000&v=beta&t=2LJU6ouqXghPbA9mfxNE4hU2OR70qAcKqJXIKUHZn_I" 
+                         alt="Avatar">
+                    <h2 class="h4 mb-3">Datos Personales</h2>
+                    <table class="table table-bordered table-striped">
+                        <tbody>
+                            <tr>
+                                <td><strong>Código</strong></td>
+                                <td>202125643</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cédula</strong></td>
+                                <td>1016593670</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Edad</strong></td>
+                                <td>21 Años</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dirección</strong></td>
+                                <td>Tv 63 # 68 F 27 Sur</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Teléfono</strong></td>
+                                <td>3102229572</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Columna derecha -->
+            <div class="col-md-6 mb-4">
+                <form style="margin:10px;">
+                    <div class = "form-row">
+                        <div class = "col">
+                            <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
+                        </div>
+                        <div class="col">
+                            <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="card shadow-sm p-3">
+                    <h2 class="h4 text-center mb-3">Cursos Actuales</h2>
+                    <table class="table table-hover table-bordered">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Curso</th>
+                                <th>Profesor</th>
+                                <th>Créditos</th>
+                            </tr>
+                        </thead>
+                        <tbody id="courses"></tbody>
+                    </table>
+                    <p id="total-credits" class="text-center font-weight-bold mt-2"></p>
+                </div>
+            </div>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
